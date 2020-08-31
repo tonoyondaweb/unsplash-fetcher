@@ -15,10 +15,11 @@ h1{
   text-align: center;
   margin-top: 20px;
   margin-bottom: 15px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   font-size: 40px;
 }
 
+/* Loading anim */
 .loader{
   position: fixed;
   top: 0;
@@ -33,4 +34,34 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Image container */
+.image-container{
+  margin: 10px 30%;
+}
+
+.image-container img{
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 7px;
+  box-shadow: 5px 10px 8px #888888;
+  transition: ease-in .25s;
+}
+
+.image-container img:hover,
+.image-container img:active{
+  transform: translatez(-0.2rem);
+  box-shadow: 5px 10px 18px #888888;
+}
+
+/* For tablets and phones */
+@media screen and (max-width: 600px){
+  h1{
+    font-size: 20px;
+  }
+
+  .image-container{
+    margin: 10px;
+  }
 }
